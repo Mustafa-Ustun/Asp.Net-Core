@@ -1,0 +1,22 @@
+﻿@model UserVM
+
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    @foreach (var user in Model.Users)
+    {
+        <tr>
+            <td>@user.Username</td>
+            <td>@user.Password</td>
+        </tr>
+    }
+
+</table>
+
+
+<a asp-action="Create" class="btn btn-primary">Create User</a>

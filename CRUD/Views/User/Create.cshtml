@@ -1,0 +1,11 @@
+﻿
+@model UserVM
+
+
+<form asp-action="Create" method="post">
+    <label>Username:</label>
+    <input type="text" asp-for="User.Username" />
+     <label>Password:</label>
+    <input type="password" asp-for="User.Password" />
+    <button class="btn btn-success">Create</button>
+</form>
